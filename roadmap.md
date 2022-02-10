@@ -1,5 +1,5 @@
 ### UI ###
-- [ ] Add Router
+- [x] Add Router
 - [x] Header component
 - [ ] Categories component
 - [ ] Item component
