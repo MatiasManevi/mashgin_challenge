@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should match snapshot 1`] = `
+<div
+  className="header"
+>
+  <WithStyles(ForwardRef(Container))>
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      justify="center"
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        xs={6}
+      >
+        <div
+          className="header__content"
+        >
+          <SearchForm />
+        </div>
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Container))>
+</div>
+`;

@@ -1,0 +1,17 @@
+@import 'assets/scss/variables';
+
+.header {
+	margin-top: $space-32;
+
+	.header__content {
+		border: 1px solid $color-primary;
+		border-radius: $space-8;
+		display: flex;
+		justify-content: center;
+		column-gap: $space-32;
+		padding-bottom: $space-8;
+		padding-top: $space-8;
+	}
+
+}
+
