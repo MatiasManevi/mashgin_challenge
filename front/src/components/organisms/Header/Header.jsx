@@ -10,7 +10,7 @@ const Header = () => {
 		<div className="header">
 			<Container>
 				<Grid container justify="center">
-					<Grid item xs={6}>
+					<Grid item xs={12} sm={6}>
 						<div className="header__content">
 							<SearchForm />
 						</div>

@@ -1,0 +1,10 @@
+@import 'assets/scss/variables';
+
+.price {
+	font-size: $font-size-24;
+	color: $color-white;
+
+	.small {
+		font-size: $font-size-18;
+	}
+}

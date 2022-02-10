@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Price should match snapshot 1`] = `
+<div
+  className="price"
+>
+  <p
+    className="price--small"
+  >
+     
+    <sup
+      className="price__cents price__cents--small"
+    />
+  </p>
+</div>
+`;

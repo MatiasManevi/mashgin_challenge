@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Items should match snapshot 1`] = `
+<Content>
+  <BreadcrumbMenu />
+  <Link
+    className="items__link"
+    key="MLA923008999"
+    to="/items/MLA923008999"
+  >
+    <Item
+      item={
+        Object {
+          "condition": "new",
+          "free_shipping": true,
+          "id": "MLA923008999",
+          "picture": "http://http2.mlstatic.com/D_712413-MLA46206646617_052021-O.jpg",
+          "price": Object {
+            "amount": 26399,
+            "currency": "$",
+            "decimals": "00",
+          },
+          "title": "Cacerola 24 Cm Essen Aqua Con Antiadherente ",
+        }
+      }
+    />
+  </Link>
+  <Link
+    className="items__link"
+    key="MLA920404456"
+    to="/items/MLA920404456"
+  >
+    <Item
+      item={
+        Object {
+          "condition": "new",
+          "free_shipping": true,
+          "id": "MLA920404456",
+          "picture": "http://http2.mlstatic.com/D_985487-MLA45983108078_052021-O.jpg",
+          "price": Object {
+            "amount": 75886,
+            "currency": "$",
+            "decimals": "00",
+          },
+          "title": "Essen Set Cacerola Sarten 24 Y Cacerola 18 Mas Utensilios",
+        }
+      }
+    />
+  </Link>
+  <Link
+    className="items__link"
+    key="MLA839886481"
+    to="/items/MLA839886481"
+  >
+    <Item
+      item={
+        Object {
+          "condition": "new",
+          "free_shipping": true,
+          "id": "MLA839886481",
+          "picture": "http://http2.mlstatic.com/D_750416-MLA44276051760_122020-O.jpg",
+          "price": Object {
+            "amount": 75950,
+            "currency": "$",
+            "decimals": "00",
+          },
+          "title": "Set Aqua Essen 3 Piezas + Set De Utensilios Super Oferta",
+        }
+      }
+    />
+  </Link>
+  <Link
+    className="items__link"
+    key="MLA910856297"
+    to="/items/MLA910856297"
+  >
+    <Item
+      item={
+        Object {
+          "condition": "new",
+          "free_shipping": true,
+          "id": "MLA910856297",
+          "picture": "http://http2.mlstatic.com/D_861354-MLA45116844792_032021-O.jpg",
+          "price": Object {
+            "amount": 62750,
+            "currency": "$",
+            "decimals": "00",
+          },
+          "title": "Essen Set Marsala 2 Piezas 28 Cm C/ant Nova Trimium Oferta!!",
+        }
+      }
+    />
+  </Link>
+</Content>
+`;
