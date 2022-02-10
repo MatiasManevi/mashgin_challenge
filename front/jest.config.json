@@ -1,0 +1,10 @@
+{
+	"snapshotSerializers": ["enzyme-to-json/serializer"],
+	"moduleDirectories": ["node_modules", "src"],
+	"testPathIgnorePatterns": ["<rootDir>/node_modules/"],
+	"moduleFileExtensions": ["js", "jsx", "json", "node"],
+	"moduleNameMapper": {
+		"\\.(scss)$": "identity-obj-proxy"
+	},
+	"setupFilesAfterEnv": ["<rootDir>/src/setupEnzyme.js"]
+}
