@@ -1,6 +1,6 @@
 ### UI ###
 - [ ] Add Router
-- [ ] Header component
+- [x] Header component
 - [ ] Categories component
 - [ ] Item component
 - [ ] Cart component
