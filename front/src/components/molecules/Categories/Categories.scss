@@ -2,12 +2,12 @@
 
 .categories {
 	display: flex;
-	padding: $space-32 0;
-	justify-content: space-between;
+	padding: $space-16 0;
+	justify-content: space-around;
 	align-items: center;
 
 	.category__title {
-		font-size: $font-size-24;
+		font-size: $font-size-18;
 		z-index: 1;
 	}
 

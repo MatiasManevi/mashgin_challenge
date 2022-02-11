@@ -1,4 +1,10 @@
+@import 'assets/scss/variables';
+
 .search-form {
 	display: flex;
 	width: 100%;
+
+	input {
+		font-size: $font-size-18;
+	}
 }
