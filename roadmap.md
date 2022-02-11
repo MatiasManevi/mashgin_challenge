@@ -1,8 +1,8 @@
 ### UI ###
 - [x] Add Router
 - [x] Header component
-- [ ] Categories component
-- [ ] Item component
+- [x] Categories component
+- [x] Item component
 - [ ] Cart component
 - [ ] Checkout component
 - [ ] Get items from API

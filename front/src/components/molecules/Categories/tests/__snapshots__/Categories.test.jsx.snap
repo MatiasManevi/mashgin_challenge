@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories should match snapshot 1`] = `
+<div
+  className="categories"
+>
+  <div
+    className="category__title"
+    key="1"
+  >
+    <a
+      onClick={[Function]}
+    >
+      Bakery
+    </a>
+  </div>
+  <div
+    className="category__title"
+    key="2"
+  >
+    <a
+      onClick={[Function]}
+    >
+      Entrees
+    </a>
+  </div>
+  <div
+    className="category__title"
+    key="3"
+  >
+    <a
+      onClick={[Function]}
+    >
+      Drinks
+    </a>
+  </div>
+</div>
+`;

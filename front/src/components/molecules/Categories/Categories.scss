@@ -1,0 +1,17 @@
+@import 'assets/scss/variables';
+
+.categories {
+	display: flex;
+	padding: $space-32 0;
+	justify-content: space-between;
+	align-items: center;
+
+	.category__title {
+		font-size: $font-size-24;
+		z-index: 1;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}

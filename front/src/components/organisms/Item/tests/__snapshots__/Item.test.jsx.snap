@@ -1,59 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Item should match snapshot 1`] = `
-<WithStyles(ForwardRef(Paper))
+<div
   className="item"
 >
-  <div
-    className="item__thumbnail"
+  <img
+    alt="picture of Bagel"
+    src="/images/293202f9d9f7f4.jpg"
+  />
+  <Price
+    price={2}
+  />
+  <p
+    className="item__title"
   >
-    <img
-      alt="imagen de Paleta Padel Wilson Ultimo Modelo Oferta En Toda La Linea Local Baires Deportes Oeste G B A Distribuidor Oficial"
-      src="http://http2.mlstatic.com/D_795607-MLA45583919609_042021-O.jpg"
-    />
-  </div>
-  <div
-    className="item__content"
-  >
-    <div
-      className="item__description"
-    >
-      <WithStyles(ForwardRef(Grid))
-        alignItems="baseline"
-        container={true}
-      >
-        <WithStyles(ForwardRef(Grid))
-          item={true}
-          xs={10}
-        >
-          <Price
-            freeShipping={true}
-            price={
-              Object {
-                "amount": 9950,
-                "currency": "$",
-                "decimals": "00",
-              }
-            }
-          />
-        </WithStyles(ForwardRef(Grid))>
-        <WithStyles(ForwardRef(Grid))
-          item={true}
-          xs={2}
-        >
-          <p
-            className="item__place"
-          >
-            Nuevo
-          </p>
-        </WithStyles(ForwardRef(Grid))>
-      </WithStyles(ForwardRef(Grid))>
-    </div>
-    <p
-      className="item__title"
-    >
-      Paleta Padel Wilson Ultimo Modelo Oferta En Toda La Linea Local Baires Deportes Oeste G B A Distribuidor Oficial
-    </p>
-  </div>
-</WithStyles(ForwardRef(Paper))>
+    Bagel
+  </p>
+</div>
 `;
