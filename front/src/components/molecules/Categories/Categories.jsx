@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-
+import clsx from 'clsx';
 import './Categories.scss';
 
 const Categories = ({ categories }) => {
 	const history = useHistory();
+	const [selectedCategoryId, setSelectedCategoryId] = useState();
 
 	return (
 		<div className="categories">
 			{categories.map((category, i) => {
 				return (
-					<div className="category__title" key={category.id}>
+					<div className={clsx("category__title", { active: selectedCategoryId === category.id })} key={category.id}>
 						<a
 							onClick={() => {
-								history.push(`?category=${category.id}`);
+								setSelectedCategoryId(category.id)
+								history.push(`?category_id=${category.id}`);
 							}}
 						>
 							{category.name}
