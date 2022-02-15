@@ -41,9 +41,11 @@
 		bottom: 20px;
     left: 20px;
 		z-index: 1;
+		user-select: none;
 	}
 
 	.item__title {
+		user-select: none;
 		position: absolute;
 		bottom: 50%;
 		right: 50%;
@@ -51,6 +53,13 @@
 		color: $color-white;
 		font-weight: bold;
 		font-size: $font-size-28;
+		z-index: 1;
+	}
+
+	button {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
 		z-index: 1;
 	}
 }

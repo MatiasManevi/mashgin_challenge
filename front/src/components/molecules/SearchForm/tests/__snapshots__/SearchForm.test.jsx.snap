@@ -9,8 +9,8 @@ exports[`SearchForm should match snapshot 1`] = `
     placeholder="Search..."
     value="Laptop"
   />
-  <SearchButton
-    clickHandler={[MockFunction]}
+  <Button
+    onClick={[MockFunction]}
   />
 </form>
 `;

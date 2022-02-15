@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 
-import { SearchButton } from 'components/atoms';
+import { Button } from 'components/atoms';
 import SearchForm from '../SearchForm';
 import * as hooks from '../hooks';
 
@@ -26,7 +26,7 @@ describe('SearchForm', () => {
 
 	it('should submit a query', () => {
 		const wrapper = mount(<SearchForm />);
-		wrapper.find(SearchButton).simulate('click');
+		wrapper.find(Button).simulate('click');
 		expect(handleSubmit).toHaveBeenCalled();
 	});
 });

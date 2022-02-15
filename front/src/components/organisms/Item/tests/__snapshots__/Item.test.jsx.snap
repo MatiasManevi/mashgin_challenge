@@ -9,12 +9,15 @@ exports[`Item should match snapshot 1`] = `
     src="/images/293202f9d9f7f4.jpg"
   />
   <Price
-    price={2}
+    price="2.00"
   />
   <p
     className="item__title"
   >
     Bagel
   </p>
+  <Button>
+    Add to Cart
+  </Button>
 </div>
 `;
