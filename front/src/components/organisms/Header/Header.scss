@@ -11,6 +11,14 @@
 	align-items: center;
 	box-shadow: 0px 1px 0px $color-neutral;
 
+	nav {
+		align-self: flex-start;
+		img {
+			width: 50px;
+			cursor: pointer;
+		}
+	}
+
 	&.shadow {
 		-webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 		-moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);

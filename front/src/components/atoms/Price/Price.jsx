@@ -7,7 +7,7 @@ const Price = ({ price, currency = 'u$s', small = false }) => {
 	return (
 		<div className="price">
 			<p className={clsx({ small })}>
-				{currency} {price}
+				{currency} {price.toFixed(2)}
 			</p>
 		</div>
 	);

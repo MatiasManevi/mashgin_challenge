@@ -34,6 +34,11 @@ const Header = () => {
 					</Grid>
 				</Grid>
 			</Container>
+			<nav>
+				<a href="/cart">
+					<img src="images/cart.png" alt="go to cart section" />
+				</a>
+			</nav>
 		</div>
 	);
 };
