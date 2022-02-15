@@ -6,7 +6,7 @@
 	overflow: hidden;
 	flex-grow: 1;
 
-	img {
+	.item-picture {
 		border-radius: $item-picture-radius;
 		width: 100%;
 		height: $item-picture-h;
@@ -15,7 +15,7 @@
 	}
 
 	&:hover {
-		img {
+		.item-picture {
 			transform: scale(1.1);
 		}
 	}
@@ -61,5 +61,10 @@
 		bottom: 20px;
 		right: 20px;
 		z-index: 1;
+
+		img {
+			width: 35px;
+			height: auto;
+		}
 	}
 }
