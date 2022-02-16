@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Cart.scss';
-import { useCart } from 'components/pages/Cart/hooks';
 import { Price, Button } from 'components/atoms';
+import { CartContainer } from 'containers/Cart.container';
 
 const Cart = ({ currency = 'u$s' }) => {
-	const { cartItems, removeFromCart } = useCart();
+	const { cartItems, removeFromCart, loadCart } = CartContainer.useContainer();
 	let totalAmount = 0;
 
+	useEffect(() => {
+		loadCart();
+	}, []);
+
 	const renderCart = () => {
-		if (!cartItems.length) return 'Your cart is empty.';
+		if (!Object.keys(cartItems).length) return 'Your cart is empty.';
 
 		return (
 			<>
-				{cartItems.map((item) => {
+				{Object.values(cartItems).map((item) => {
 					totalAmount += item.price;
 					return (
 						<div key={item.id} className="cart__item">
@@ -34,15 +39,20 @@ const Cart = ({ currency = 'u$s' }) => {
 					)
 				})}
 				<p className="cart__total">Total: {currency} {totalAmount.toFixed(2)}</p>
-				<Button>Confirm purchase</Button>
+				<Button>Confirm & Checkout</Button>
 			</>
 		)
 	};
 
 	return (
 		<div className="cart">
-			<div className="cart__content">
+			<div className="cart__header">
+				<Link to="/">
+					<img src="/images/left-arrow.png" alt="back to item list" />
+				</Link>
 				<h1>Your order</h1>
+			</div>
+			<div className="cart__content">
 				{renderCart()}
 			</div>
 		</div >

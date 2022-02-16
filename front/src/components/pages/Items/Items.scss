@@ -1,4 +1,4 @@
-@import 'assets/scss/variables/spacing';
+@import 'assets/scss/variables';
 
 .items {
 	display: flex;
@@ -7,4 +7,14 @@
 	gap: $space-84;
 	padding: $space-32;
 	justify-content: center;
+}
+
+.to-cart {
+	position: sticky;
+	cursor: pointer;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: $space-16;
+	background-color: $color-secondary;
 }

@@ -3,8 +3,8 @@ import clsx from 'clsx';
 
 import './Button.scss';
 
-const Button = ({ onClick, children, color = "primary" }) => {
-	return <button className={clsx(color)} onClick={onClick}>{children}</button>;
+const Button = ({ onClick, children, color = "primary", className = '' }) => {
+	return <button className={clsx(className, color)} onClick={onClick}>{children}</button>;
 };
 
 export default Button;

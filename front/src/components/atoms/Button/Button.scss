@@ -10,9 +10,15 @@ button {
 	border-radius: $space-8;
 	font-weight: 700;
 	font-size: $font-size-18;
+	transition: all .5s ease;
 
 	&.secondary {
 		background-color: $color-secondary;
+		color: $color-white;
+	}
+
+	&.neutral {
+		background-color: $color-neutral;
 		color: $color-white;
 	}
 

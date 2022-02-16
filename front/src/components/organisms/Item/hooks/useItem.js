@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useCart } from 'components/pages/Cart/hooks'
+import { CartContainer } from 'containers/Cart.container';
 
 const useItem = (id) => {
 	const [addedToCart, setAddedTocart] = useState(false);
-	const { addToCart, removeFromCart } = useCart();
+	const { addToCart, removeFromCart } = CartContainer.useContainer();
 
 	const add = (item) => {
 		addToCart(item);
