@@ -3,7 +3,7 @@
 - [x] Header component
 - [x] Categories component
 - [x] Item component
-- [ ] Cart component
+- [x] Cart component
 - [ ] Checkout component
 - [ ] Get items from API
 - [ ] Get categories from API
