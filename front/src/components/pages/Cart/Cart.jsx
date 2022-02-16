@@ -14,7 +14,7 @@ const Cart = ({ currency = 'u$s' }) => {
 	}, []);
 
 	const renderCart = () => {
-		if (!Object.keys(cartItems).length) return 'Your cart is empty.';
+		if (!Object.keys(cartItems).length) return <p className="empty">You have not selected any item yet, the cart is empty.</p>;
 
 		return (
 			<>
@@ -24,7 +24,7 @@ const Cart = ({ currency = 'u$s' }) => {
 						<div key={item.id} className="cart__item">
 							<img src={`/images/${item.image_id}.jpg`} alt={`picture of ${item.name}`} />
 							<div>
-								<p>{item.name}</p>
+								<p className="cart__item__name">{item.name}</p>
 								<Price price={item.price} small />
 								<p>Quantity: 1</p>
 								<img
