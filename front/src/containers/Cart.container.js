@@ -6,11 +6,9 @@ export const CartContainer = createContainer(() => {
 
 	const addToCart = (item) => {
 		let cart = JSON.parse(localStorage.getItem('cart'));
-		console.log('old cart', cart)
 		if (cart && !cart[item.id]) {
 			cart[item.id] = item;
 		}
-		console.log('new cart', cart)
 		localStorage.setItem('cart', JSON.stringify(cart));
 		setCartItems(cart);
 	}
@@ -31,7 +29,6 @@ export const CartContainer = createContainer(() => {
 
 	const loadCart = () => {
 		const cart = JSON.parse(localStorage.getItem('cart'));
-		console.log(cart, 'cart in storage')
 		setCartItems(cart);
 	}
 
