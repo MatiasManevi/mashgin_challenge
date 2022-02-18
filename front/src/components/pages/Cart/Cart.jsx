@@ -14,7 +14,7 @@ const Cart = ({ currency = 'u$s' }) => {
 	}, []);
 
 	const renderCart = () => {
-		if (!Object.keys(cartItems).length) return <p className="empty">You have not selected any item yet, the cart is empty.</p>;
+		if (!cartItems || !Object.keys(cartItems).length) return <p className="empty">You have not selected any item yet, the cart is empty.</p>;
 
 		return (
 			<>

@@ -18,7 +18,7 @@ const Items = () => {
 	}, []);
 
 	useEffect(() => {
-		if (Object.keys(cartItems).length) {
+		if (cartItems && Object.keys(cartItems).length) {
 			setGoCart(true);
 		} else {
 			setGoCart(false);

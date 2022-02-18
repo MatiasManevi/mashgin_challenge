@@ -5,8 +5,8 @@ export const CartContainer = createContainer(() => {
 	const [cartItems, setCartItems] = useState({});
 
 	const addToCart = (item) => {
-		let cart = JSON.parse(localStorage.getItem('cart'));
-		if (cart && !cart[item.id]) {
+		let cart = JSON.parse(localStorage.getItem('cart')) || {};
+		if (!cart[item.id]) {
 			cart[item.id] = item;
 		}
 		localStorage.setItem('cart', JSON.stringify(cart));
