@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 
 import './Cart.scss';
 import { Price, Button } from 'components/atoms';
 import { CartContainer } from 'containers/Cart.container';
 
 const Cart = ({ currency = 'u$s' }) => {
+	const history = useHistory();
 	const { cartItems, removeFromCart, loadCart } = CartContainer.useContainer();
 	let totalAmount = 0;
 
@@ -39,19 +40,19 @@ const Cart = ({ currency = 'u$s' }) => {
 					)
 				})}
 				<p className="cart__total">Total: {currency} {totalAmount.toFixed(2)}</p>
-				<Button>Confirm & Checkout</Button>
+				<Button onClick={() => history.push('/checkout')}>Confirm & Checkout</Button>
 			</>
 		)
 	};
 
 	return (
 		<div className="cart">
-			<div className="cart__header">
+			<header>
 				<Link to="/">
 					<img src="/images/left-arrow.png" alt="back to item list" />
 				</Link>
 				<h1>Your order</h1>
-			</div>
+			</header>
 			<div className="cart__content">
 				{renderCart()}
 			</div>

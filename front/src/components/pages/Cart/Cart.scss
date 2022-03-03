@@ -7,9 +7,11 @@
 	justify-content: flex-start;
 	align-items: center;
 
-	.cart__header {
+	header {
+		 position: relative;
 		 margin-top: $space-32;
 		 max-width: 650px;
+		 align-items: center;
 		 width: 100%;
 		 display: flex;
 		 background-color: $color-primary;
@@ -17,15 +19,19 @@
 		 z-index: 1;
 
 		 h1 {
+			  position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
 			  color: $color-white;
 				font-size: $font-size-24;
-			  width: 100%;
 				text-align: center;
 				align-self: center;
 				padding: $space-8;
 			}
 
-			img {
+			a {
+				z-index: 1;
 				cursor: pointer;
 			}
 
