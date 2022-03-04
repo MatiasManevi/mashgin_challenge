@@ -1,107 +1,23 @@
 import React from 'react';
+import qs from 'qs';
 
-// import ItemService from 'services/items';
-
-const _items = [
-	{
-		"category_id": 1,
-		"id": 1,
-		"image_id": "293202f9d9f7f4",
-		"name": "Bagel",
-		"price": 2.0
-	},
-	{
-		"category_id": 1,
-		"id": 2,
-		"image_id": "808916fd5ddf96",
-		"name": "Croissant",
-		"price": 1.0
-	},
-	{
-		"category_id": 1,
-		"id": 3,
-		"image_id": "95d02a230fe050",
-		"name": "Muffin",
-		"price": 1.25
-	},
-	{
-		"category_id": 1,
-		"id": 4,
-		"image_id": "23f95765b967ff",
-		"name": "Toast / Bread",
-		"price": 1
-	},
-	{
-		"category_id": 1,
-		"id": 5,
-		"image_id": "5650be5d48a99b",
-		"name": "English Muffin",
-		"price": 2.5
-	},
-	{
-		"category_id": 2,
-		"id": 6,
-		"image_id": "bd237a0c0d19ef",
-		"name": "Pasta Bar",
-		"price": 12.99
-	},
-	{
-		"category_id": 2,
-		"id": 7,
-		"image_id": "3e1bd1342800f7",
-		"name": "Mediterranean Entree",
-		"price": 10.99
-	},
-	{
-		"category_id": 2,
-		"id": 8,
-		"image_id": "72589c4c990f97",
-		"name": "Indian Entree",
-		"price": 11.95
-	},
-	{
-		"category_id": 3,
-		"id": 9,
-		"image_id": "70c2a6247e7b58",
-		"name": "Small Drink",
-		"price": 0.75
-	},
-	{
-		"category_id": 3,
-		"id": 10,
-		"image_id": "dba0fc03da30ca",
-		"name": "Medium Drink",
-		"price": 1.5
-	},
-	{
-		"category_id": 3,
-		"id": 11,
-		"image_id": "ffc9bf61e441cd",
-		"name": "Large Drink",
-		"price": 2
-	}
-];
+import API from 'utils/apiGateway';
 
 const useItems = () => {
-	const [items, setItems] = React.useState(_items);
-	const [categories, setCategories] = React.useState([]);
+	const [items, setItems] = React.useState([]);
 	const search = new URLSearchParams(window.location.search).get('search');
-	const category = new URLSearchParams(window.location.search).get('category');
+	const category_id = new URLSearchParams(window.location.search).get('category_id');
 
-	// React.useEffect(async () => {
-	// 	try {
-	// 		const response = await ItemService.get(search, category);
-	// 		setItems(response.items);
-	// 		setCategories(response.categories);
-	// 	} catch (e) {
-	// 		console.error(e);
-	// 	}
-	// }, [search, category]);
+	React.useEffect(async () => {
+		const query = qs.stringify({ category_id, search });
+		try {
+			API.getItems(query).then(setItems);
+		} catch (e) {
+			console.error({ e });
+		}
+	}, [search, category_id]);
 
-	return {
-		items,
-		categories
-	};
+	return { items };
 };
 
 export default useItems;
