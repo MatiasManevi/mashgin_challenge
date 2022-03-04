@@ -4,6 +4,7 @@ import { shallow } from 'enzyme';
 import Items from '../Items';
 import * as hooks from '../hooks';
 import items from './items.fixtures';
+import { ContainerProviders } from 'containers';
 
 jest.mock('../hooks');
 
@@ -15,7 +16,7 @@ stateSpy.mockReturnValue({
 
 describe('Items', () => {
 	it('should match snapshot', () => {
-		const wrapper = shallow(<Items />);
+		const wrapper = shallow(<ContainerProviders><Items /></ContainerProviders>);
 		expect(wrapper).toMatchSnapshot();
 	});
 });

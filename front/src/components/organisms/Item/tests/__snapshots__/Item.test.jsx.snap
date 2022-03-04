@@ -1,23 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Item should match snapshot 1`] = `
-<div
-  className="item"
->
-  <img
-    alt="picture of Bagel"
-    src="/images/293202f9d9f7f4.jpg"
+<Provider>
+  <Item
+    item={
+      Object {
+        "category_id": 1,
+        "id": 1,
+        "image_id": "293202f9d9f7f4",
+        "name": "Bagel",
+        "price": 2,
+      }
+    }
   />
-  <Price
-    price="2.00"
-  />
-  <p
-    className="item__title"
-  >
-    Bagel
-  </p>
-  <Button>
-    Add to Cart
-  </Button>
-</div>
+</Provider>
 `;

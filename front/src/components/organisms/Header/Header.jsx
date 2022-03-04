@@ -7,7 +7,7 @@ import { SearchForm, Categories } from 'components/molecules';
 
 const Header = () => {
 	return (
-		<div className="header shadow">
+		<header className="shadow">
 			<Container>
 				<Grid container justify="center">
 					<Grid item xs={12} sm={6}>
@@ -34,12 +34,12 @@ const Header = () => {
 					</Grid>
 				</Grid>
 			</Container>
-			<nav>
+			<div className="header__cart">
 				<a href="/cart">
 					<img src="images/cart.png" alt="go to cart section" />
 				</a>
-			</nav>
-		</div>
+			</div>
+		</header>
 	);
 };
 

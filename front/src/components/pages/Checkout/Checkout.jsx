@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './Checkout.scss';
 import { CartContainer } from 'containers/Cart.container';
-import { Price, Button, Input, Header } from 'components/atoms';
+import { Price, Button, Input, Nav } from 'components/atoms';
 
 const Checkout = () => {
 	const { getCartItems } = CartContainer.useContainer();
@@ -13,7 +13,7 @@ const Checkout = () => {
 	const total = cartItems.reduce((n, { price }) => n + price, 0);
 
 	return <div className="checkout">
-		<Header backTo="/cart" title="Checkout" color="neutral" />
+		<Nav backTo="/cart" title="Checkout" color="neutral" />
 		<div className="checkout__body">
 			<div>
 				<h3>Fill payment data</h3>

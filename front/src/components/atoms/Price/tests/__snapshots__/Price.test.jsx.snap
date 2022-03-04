@@ -9,7 +9,7 @@ exports[`Price should match snapshot 1`] = `
   >
     u$s
      
-    2000
+    2000.00
   </p>
 </div>
 `;

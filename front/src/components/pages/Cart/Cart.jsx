@@ -2,7 +2,7 @@ import React, { useEffect, useMemo } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import './Cart.scss';
-import { Price, Button, Header } from 'components/atoms';
+import { Price, Button, Nav } from 'components/atoms';
 import { CartContainer } from 'containers/Cart.container';
 
 const Cart = ({ currency = 'u$s' }) => {
@@ -46,7 +46,7 @@ const Cart = ({ currency = 'u$s' }) => {
 
 	return (
 		<div className="cart">
-			<Header backTo="/" title="Your order" />
+			<Nav backTo="/" title="Your order" />
 			<div className="cart__content">
 				{renderCart}
 			</div>

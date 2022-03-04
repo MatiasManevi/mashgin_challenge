@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header should match snapshot 1`] = `
-<div
-  className="header shadow"
+<header
+  className="shadow"
 >
   <WithStyles(ForwardRef(Container))>
     <WithStyles(ForwardRef(Grid))
@@ -43,5 +43,17 @@ exports[`Header should match snapshot 1`] = `
       </WithStyles(ForwardRef(Grid))>
     </WithStyles(ForwardRef(Grid))>
   </WithStyles(ForwardRef(Container))>
-</div>
+  <div
+    className="header__cart"
+  >
+    <a
+      href="/cart"
+    >
+      <img
+        alt="go to cart section"
+        src="images/cart.png"
+      />
+    </a>
+  </div>
+</header>
 `;
