@@ -4,7 +4,7 @@
 - [x] Categories component
 - [x] Item component
 - [x] Cart component
-- [ ] Checkout component
+- [x] Checkout component
 - [ ] Get items from API
 - [ ] Get categories from API
 

@@ -9,41 +9,6 @@
 	gap: $space-32;
 	background-color: $color-neutral;
 
-	header {
-		 position: relative;
-		 max-width: 650px;
-		 width: 100%;
-		 display: flex;
-		 align-items: center;
-		 margin-top: $space-32;
-		 border-radius: $space-8;
-
-		 h1 {
-			  position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%, -50%);
-			 	color: $color-white;
-				font-size: $font-size-24;
-				text-align: center;
-				align-self: center;
-				padding: $space-8;
-			}
-
-			a {
-				z-index: 1;
-				cursor: pointer;
-			}
-
-			@media screen and (max-width: 768px) {
-				position: sticky;
-				max-width: 100%;
-				border-radius: 0%;
-		 		margin-top: 0;
-		 		top: 0;
-			}
-	}
-
 	.checkout__body {
 		display: flex;
 		flex-direction: column;

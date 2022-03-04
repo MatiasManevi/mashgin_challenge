@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import { useHistory, Link } from 'react-router-dom';
+import React, { useEffect, useMemo } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import './Cart.scss';
-import { Price, Button } from 'components/atoms';
+import { Price, Button, Header } from 'components/atoms';
 import { CartContainer } from 'containers/Cart.container';
 
 const Cart = ({ currency = 'u$s' }) => {
@@ -14,7 +14,7 @@ const Cart = ({ currency = 'u$s' }) => {
 		loadCart();
 	}, []);
 
-	const renderCart = () => {
+	const renderCart = useMemo(() => {
 		if (!cartItems || !Object.keys(cartItems).length) return <p className="empty">You have not selected any item yet, the cart is empty.</p>;
 
 		return (
@@ -27,7 +27,6 @@ const Cart = ({ currency = 'u$s' }) => {
 							<div>
 								<p className="cart__item__name">{item.name}</p>
 								<Price price={item.price} small />
-								<p>Quantity: 1</p>
 								<img
 									onClick={() => removeFromCart(item.id)}
 									title="Remove item"
@@ -43,18 +42,13 @@ const Cart = ({ currency = 'u$s' }) => {
 				<Button onClick={() => history.push('/checkout')}>Confirm & Checkout</Button>
 			</>
 		)
-	};
+	}, [cartItems]);
 
 	return (
 		<div className="cart">
-			<header>
-				<Link to="/">
-					<img src="/images/left-arrow.png" alt="back to item list" />
-				</Link>
-				<h1>Your order</h1>
-			</header>
+			<Header backTo="/" title="Your order" />
 			<div className="cart__content">
-				{renderCart()}
+				{renderCart}
 			</div>
 		</div >
 	)

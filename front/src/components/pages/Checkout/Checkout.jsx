@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 
 import './Checkout.scss';
 import { CartContainer } from 'containers/Cart.container';
-import { Price, Button, Input } from 'components/atoms';
+import { Price, Button, Input, Header } from 'components/atoms';
 
 const Checkout = () => {
 	const { getCartItems } = CartContainer.useContainer();
@@ -14,12 +13,7 @@ const Checkout = () => {
 	const total = cartItems.reduce((n, { price }) => n + price, 0);
 
 	return <div className="checkout">
-		<header>
-			<Link to="/cart">
-				<img src="/images/left-arrow.png" alt="back to item list" />
-			</Link>
-			<h1>Checkout</h1>
-		</header>
+		<Header backTo="/cart" title="Checkout" color="neutral" />
 		<div className="checkout__body">
 			<div>
 				<h3>Fill payment data</h3>
