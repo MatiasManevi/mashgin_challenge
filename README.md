@@ -2,7 +2,7 @@
 
 This project is a coding challenge proposed and created for that sole purpose by Mashgin.
 
-The objective of the challenge is to create a simple checkout Order System web app for a restaurant.
+The goal of the challenge is to create a simple checkout Order System web app for a restaurant.
 
 Users will be able to:
 - See menu items
