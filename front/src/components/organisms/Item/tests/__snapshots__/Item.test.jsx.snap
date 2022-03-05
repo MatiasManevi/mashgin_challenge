@@ -1,17 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Item should match snapshot 1`] = `
-<Provider>
-  <Item
-    item={
-      Object {
-        "category_id": 1,
-        "id": 1,
-        "image_id": "293202f9d9f7f4",
-        "name": "Bagel",
-        "price": 2,
+<Memo()>
+  <Provider>
+    <Item
+      item={
+        Object {
+          "category_id": 1,
+          "id": 1,
+          "image_id": "293202f9d9f7f4",
+          "name": "Bagel",
+          "price": 2,
+        }
       }
-    }
-  />
-</Provider>
+    >
+      <div
+        className="item"
+      >
+        <img
+          alt="picture of Bagel"
+          className="item-picture"
+          src="/images/293202f9d9f7f4.jpg"
+        />
+        <Price
+          price={2}
+        >
+          <div
+            className="price"
+          >
+            <p
+              className=""
+            >
+              u$s
+               
+              2.00
+            </p>
+          </div>
+        </Price>
+        <p
+          className="item__title"
+        >
+          Bagel
+        </p>
+        <Button
+          color="primary"
+          onClick={[Function]}
+        >
+          <button
+            className="primary"
+            onClick={[Function]}
+          >
+            <img
+              alt="add to cart"
+              src="images/add-to-cart.png"
+              title="Add to Cart"
+            />
+          </button>
+        </Button>
+      </div>
+    </Item>
+  </Provider>
+</Memo()>
 `;
