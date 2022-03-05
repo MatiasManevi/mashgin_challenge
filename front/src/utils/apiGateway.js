@@ -13,6 +13,10 @@ const API = {
 		return this._get(`/items?${query}`);
 	},
 
+	getCategories(query) {
+		return this._get(`/categories`);
+	},
+
 	_get(resource) {
 		return axios.get(resource);
 	},

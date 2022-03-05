@@ -3,9 +3,12 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
 import './Header.scss';
+import { useCategories } from './hooks';
 import { SearchForm, Categories } from 'components/molecules';
 
 const Header = () => {
+	const { categories } = useCategories();
+
 	return (
 		<header className="shadow">
 			<Container>
@@ -14,23 +17,7 @@ const Header = () => {
 						<div className="header__content">
 							<SearchForm />
 						</div>
-						<Categories categories={[
-							{
-								id: 1,
-								image_id: "f3fbf57b118fa9",
-								name: "Bakery"
-							},
-							{
-								id: 2,
-								image_id: "b271afbefdc554",
-								name: "Entrees"
-							},
-							{
-								id: 3,
-								image_id: "eba73b2361fae3",
-								name: "Drinks"
-							}
-						]} />
+						<Categories categories={categories} />
 					</Grid>
 				</Grid>
 			</Container>
