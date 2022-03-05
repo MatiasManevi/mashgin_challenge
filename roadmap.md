@@ -16,3 +16,5 @@
 - [x] Add controllers/categories
 - [x] Add routes/orders
 - [x] Add controllers/orders
+
+- [x] Dockerize App

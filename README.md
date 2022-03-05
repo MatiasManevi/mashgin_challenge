@@ -18,10 +18,11 @@ Tech stack used
 - Axios
 - Jest
 - Enzyme
+- Docker
 
 ## Run it
 
-// todo
+Run `docker-compose up --build` and go to `http://localhost:7070` in your browser.
 
 ## License
 
