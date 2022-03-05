@@ -12,7 +12,8 @@ Users will be able to:
 
 Tech stack used
 
-- React
+- React with Hooks
+- Unstated-next
 - React router
 - Express
 - Axios
