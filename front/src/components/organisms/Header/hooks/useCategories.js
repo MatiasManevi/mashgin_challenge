@@ -5,7 +5,7 @@ import API from 'utils/apiGateway';
 const useCategories = () => {
 	const [categories, setCategories] = React.useState([]);
 
-	React.useEffect(async () => {
+	React.useEffect(() => {
 		try {
 			API.getCategories().then(setCategories);
 		} catch (e) {

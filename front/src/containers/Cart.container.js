@@ -32,11 +32,17 @@ export const CartContainer = createContainer(() => {
 		setCartItems(cart);
 	}
 
+	const emptyCart = () => {
+		setCartItems({});
+		localStorage.removeItem('cart');
+	}
+
 	return {
 		cartItems,
 		getCartItems,
 		removeFromCart,
 		addToCart,
-		loadCart
+		loadCart,
+		emptyCart
 	};
 });

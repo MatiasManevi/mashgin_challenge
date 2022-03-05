@@ -20,25 +20,7 @@ exports[`Header should match snapshot 1`] = `
           <SearchForm />
         </div>
         <Categories
-          categories={
-            Array [
-              Object {
-                "id": 1,
-                "image_id": "f3fbf57b118fa9",
-                "name": "Bakery",
-              },
-              Object {
-                "id": 2,
-                "image_id": "b271afbefdc554",
-                "name": "Entrees",
-              },
-              Object {
-                "id": 3,
-                "image_id": "eba73b2361fae3",
-                "name": "Drinks",
-              },
-            ]
-          }
+          categories={Array []}
         />
       </WithStyles(ForwardRef(Grid))>
     </WithStyles(ForwardRef(Grid))>

@@ -33,11 +33,21 @@
 		}
 	}
 
-	button {
+	.checkout__confirm {
 		margin: $space-32 0;
 		align-self: center;
 		color: $color-white;
 		font-size: $font-size-18;
 		padding: $space-16;
+	}
+
+	.checkout__success {
+		display: flex;
+		flex-direction: column;
+		gap: $space-32;
+		padding: $space-84;
+		h1 {
+			color: $color-white;
+		}
 	}
 }

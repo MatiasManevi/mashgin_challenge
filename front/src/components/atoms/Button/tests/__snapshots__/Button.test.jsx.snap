@@ -3,6 +3,7 @@
 exports[`Button should match snapshot 1`] = `
 <button
   className="primary"
+  disabled={false}
   onClick={[MockFunction]}
 />
 `;

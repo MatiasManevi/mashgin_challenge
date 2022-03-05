@@ -25,4 +25,9 @@ button {
 	&:hover {
 		filter: brightness(.95);
 	}
+
+	&:disabled {
+		filter: brightness(.5);
+    pointer-events: none;
+  }
 }
