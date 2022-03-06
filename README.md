@@ -25,6 +25,8 @@ Tech stack used
 
 Run `docker-compose up --build` and go to `http://localhost:7070` in your browser.
 
+To see the list of orders created you can go to `./back/data/orders.json`. Which is a shared volume between the docker container and the host.
+
 ## License
 
 Project under [BSD License](https://github.com/MatiasManevi/ml_challenge/blob/master/LICENSE).
