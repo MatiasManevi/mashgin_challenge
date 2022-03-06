@@ -1,12 +1,14 @@
-const cors = require('cors');
 const path = require('path');
 
+// Setup express App
 const app = require('./setup-express');
 const routes = require('./routes');
 const { PORT = 7070 } = require('./config');
 
-app.use(cors());
+// Setup api routes
 app.use('/api', routes);
+
+// Setup static files
 app.use('*', (_, res) => {
 	res.sendFile(path.join(__dirname, './public/', 'index.html'));
 });

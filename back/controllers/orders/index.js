@@ -1,5 +1,10 @@
 const fs = require('fs');
 
+/**
+ * Adds a new order into the orders list
+ * @param {*} req
+ * @param {*} res
+ */
 const post = async (req, res) => {
 	try {
 		const newOrder = req.body;

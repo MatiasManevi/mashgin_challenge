@@ -4,6 +4,11 @@ const options = {
 	keys: ['name']
 }
 
+/**
+ * Gets all items list filtered by search param and category_id if sent.
+ * @param {*} req
+ * @param {*} res
+ */
 const get = async (req, res) => {
 	try {
 		const { search, category_id } = req.query;
